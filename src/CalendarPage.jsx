@@ -342,6 +342,21 @@ export default function CalendarPage() {
                   </button>
                 </div>
               </div>
+{/* Legend */}
+              <div className="flex flex-wrap gap-3 mb-4 text-sm">
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 bg-blue-400 rounded"></div>
+                  <span>Available</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 bg-gray-600 rounded"></div>
+                  <span>Full</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 bg-white border rounded"></div>
+                  <span>No Event</span>
+                </div>
+              </div>
 
               <div className="grid grid-cols-7 gap-2 mb-2">
                 {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
